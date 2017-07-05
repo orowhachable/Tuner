@@ -27,7 +27,7 @@ private function MakeKeys(){
         audio.clip = Resources.Load("Sounds/"+theKey.name) as AudioClip;
 
         //audio.clip.name = Kcodes[sc]+(Octave+1);
-        Debug.Log(audio.clip);
+        //Debug.Log(audio.clip);
 
         //theKey.AddComponent(KeyTouch);
 
