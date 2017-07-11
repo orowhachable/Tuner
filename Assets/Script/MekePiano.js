@@ -24,7 +24,7 @@ private function MakeKeys(){
         theKey.name = Kcodes[sc]+(Octave+1);
         theKey.GetComponent(Renderer).material = Resources.Load("White") as Material;
         var audio: AudioSource = theKey.AddComponent(AudioSource);
-        audio.clip = Resources.Load("Sounds/"+theKey.name) as AudioClip;
+        audio.clip = Resources.Load("GarageSound/"+theKey.name) as AudioClip;
 
         //audio.clip.name = Kcodes[sc]+(Octave+1);
         //Debug.Log(audio.clip);
@@ -42,7 +42,7 @@ private function MakeKeys(){
            theBKey.name = Kcodes[sc]+"#"+(Octave+1);
            theBKey.GetComponent(Renderer).material = Resources.Load("Black") as Material;
            var audio2: AudioSource = theBKey.AddComponent(AudioSource);
-           audio2.clip = Resources.Load("Sounds/" + theBKey.name) as AudioClip;
+           audio2.clip = Resources.Load("GarageSound/" + theBKey.name) as AudioClip;
            //theBKey.AddComponent(KeyTouch);
         }
       }
